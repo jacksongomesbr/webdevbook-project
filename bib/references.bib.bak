@@ -98,4 +98,37 @@
   url     = {https://nodejs.org},
 }
 
+@Misc{npmjshome,
+  author  = {{npm, Inc.}},
+  title   = {npm},
+  urldate = {2018-07-23},
+  url     = {https://www.npmjs.com/},
+}
+
+@Misc{wiki:mvc,
+  author  = {{Wikipedia contributors}},
+  title   = {Model–view–controller --- {Wikipedia}{,} The Free Encyclopedia},
+  year    = {2018},
+  note    = {[Online; accessed 23-July-2018]},
+  urldate = {2018-07-23},
+  url     = {https://en.wikipedia.org/w/index.php?title=Model%E2%80%93view%E2%80%93controller&oldid=849850595},
+}
+
+@Misc{wiki:mvvm,
+  author  = {{Wikipedia contributors}},
+  title   = {Model–view–viewmodel --- {Wikipedia}{,} The Free Encyclopedia},
+  year    = {2018},
+  note    = {[Online; accessed 23-July-2018]},
+  urldate = {2018-07-23},
+  url     = {https://en.wikipedia.org/w/index.php?title=Model%E2%80%93view%E2%80%93viewmodel&oldid=851186618},
+}
+
+@Misc{wiki:di,
+  author = {{Wikipedia contributors}},
+  title  = {Dependency injection --- {Wikipedia}{,} The Free Encyclopedia},
+  year   = {2018},
+  note   = {[Online; accessed 23-July-2018]},
+  url    = {https://en.wikipedia.org/w/index.php?title=Dependency_injection&oldid=845653474},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
