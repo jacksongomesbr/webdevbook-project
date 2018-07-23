@@ -1,0 +1,101 @@
+% Encoding: UTF-8
+
+@Misc{w3sjstutorial,
+  author  = {{W3Schools}},
+  title   = {JavaScript Tutorial},
+  urldate = {2018-07-22},
+  url     = {https://www.w3schools.com/js/default.asp},
+}
+
+@Misc{w3sjsandhtmldomref,
+  author  = {{W3Schools}},
+  title   = {JavaScript and HTML DOM Reference},
+  urldate = {2018-07-22},
+  url     = {https://www.w3schools.com/jsref/default.asp},
+}
+
+@Misc{w3shtml5tutorial,
+  author  = {{W3Schools}},
+  title   = {HTML5 Tutorial},
+  urldate = {2018-07-22},
+  url     = {https://www.w3schools.com/html/default.asp},
+}
+
+@Misc{w3scsstutorial,
+  author  = {{W3Schools}},
+  title   = {CSS Tutorial},
+  urldate = {2018-07-22},
+  url     = {https://www.w3schools.com/css/default.asp},
+}
+
+@Misc{w3scssref,
+  author  = {{W3Schools}},
+  title   = {CSS Reference},
+  urldate = {2018-07-22},
+  url     = {https://www.w3schools.com/cssref/default.asp},
+}
+
+@Misc{w3shtmlref,
+  author  = {{W3Schools}},
+  title   = {HTML Element Reference},
+  urldate = {2018-07-22},
+  url     = {https://www.w3schools.com/tags/default.asp},
+}
+
+@Misc{angularhome,
+  author  = {Google},
+  title   = {Angular},
+  urldate = {2018-07-22},
+  url     = {https://angular.io/},
+}
+
+@Misc{w3sjquerytutorial,
+  author  = {{W3Schools}},
+  title   = {jQuery Tutorial},
+  urldate = {2018-07-22},
+  url     = {https://www.w3schools.com/jquery/default.asp},
+}
+
+@Misc{w3sjqueryref,
+  author  = {{W3Schools}},
+  title   = {jQuery Reference},
+  urldate = {2018-07-22},
+  url     = {https://www.w3schools.com/jquery/jquery_ref_overview.asp},
+}
+
+@Misc{jqueryhome,
+  author  = {{The jQuery Foundation}},
+  title   = {jQuery},
+  urldate = {2018-07-22},
+  url     = {http://jquery.com/},
+}
+
+@Misc{vscodehome,
+  author  = {Microsoft},
+  title   = {Visual Studio Code - Code Editing. Redefined},
+  urldate = {2018-07-22},
+  url     = {https://code.visualstudio.com/},
+}
+
+@Misc{githome,
+  author  = {{Git community}},
+  title   = {Git},
+  urldate = {2018-07-22},
+  url     = {https://git-scm.com/},
+}
+
+@Misc{angularclihome,
+  author  = {Google},
+  title   = {Angular CLI},
+  urldate = {2018-07-22},
+  url     = {https://cli.angular.io/},
+}
+
+@Misc{nodejshome,
+  author  = {{Node.js Foundation}},
+  title   = {Node.js},
+  urldate = {2018-07-23},
+  url     = {https://nodejs.org},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
