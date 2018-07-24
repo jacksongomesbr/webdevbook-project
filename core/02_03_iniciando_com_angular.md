@@ -1,4 +1,4 @@
-# Iniciando com o Angular
+# Iniciando com o Angular {#sec:angular-iniciando}
 
 O **Angular** é um framework para o desenvolvimento de software front-end. Isso quer dizer que utiliza tecnologias padrão do contexto web como HTML, CSS e uma linguagem de programação como JavaScript ou TypeScript [@angularhome].
 
@@ -37,7 +37,9 @@ O **Template** determina a parte visual do componente e é definido por código 
 
 Metadados são um recurso do Angular para adicionar detalhes a classes. Isso é utilizado para que o Angular interprete uma classe como um Módulo ou como um Componente, por exemplo.
 
-### Data binding
+Os metadados utilizam o conceito de **decorators** do TypeScript, que permitem formas de adicionar informações (metadados) a classes e membros de classe (atributos e métodos) [@typescripthome].
+
+### Data binding {#sec:angular-data-binding}
 
 Data binding (que seria algo como "vinculação de dados" em português) é um reucrso do Angular que representa um componente importante da sua arquitetura. Considere os seguintes elementos:
 
@@ -46,6 +48,12 @@ Data binding (que seria algo como "vinculação de dados" em português) é um r
 * um Controller ou um View-Model determina o comportamento do Template
 
 Se o Controller atualiza o Model, então o Template tem que ser atualizado automaticamente. Se o usuário atualiza o Model por meio do Template (usando um formulário, por exemplo) o Controller também precisa ter acesso ao Model atualizado. O Data Binding atua garantindo que esse processo ocorra dessa forma.
+
+A **sintaxe de data binding** é o mecanismo que controla a ordem entre fonte e destino dos dados:
+
+* **one-way de fonte para view**: pode ser de cinco tipos: **Interpolation**, **Property**, **Attribute**, **Class** e **Style**. A sintaxe de interpolação é `{{expressao}}` para apresentar o valor de `expressao` no Template ou `[target]="expressao"` para que `target` (por exemplo, uma propriedade) receba o valor de `expressao`
+* **one-way de view para destino**: pode ser do tipo **Event**. A sintaxe de evento é `(evento)="instrucao"`, indica para o Angular que deve executar `instrucao` no tratador do `evento`
+* **two-way**: a sintaxe é `[(alvo)]="expressao"` 
 
 ### Diretivas
 
@@ -64,37 +72,49 @@ Enquanto esses elementos da Arquitetura do Angular representam conceitos, é imp
 
 Um software desenvolvido em Angular é representado por vários arquivos HTML, CSS, TypeScript e de configuração (geralmente arquivos em formato **JSON**).
 
-```
-+ src
-  + app
-    - app.component.css
-    - app.component.html
-    - app.component.ts
-    - app.module.ts
-  + assets
-  + environments
-    - environment.prod.ts
-    - environment.ts
-  - index.html
-  - maint.ts
-  - polyfills.ts
-  - styles.css
-  - tsconfig.app.json
-  - typings.d.ts
-- .angular-cli.json
-- package.json
-- tsconfig.json
-- tslint.json
-```
+
+\dirtree{%
+ .1 e2e.
+ .1 node\_modules.
+ .1 src.
+ .1 .editorconfig.
+ .1 .gitignore.
+ .1 angular.json.
+ .1 package.json.
+ .1 package-lock.json.
+ .1 README.md.
+ .1 tsconfig.json.
+ .1 tslint.json.
+}
 
 No diretório raiz do software:
 
-* `src`: contém o código-fonte do software (módulos, componentes etc.)
-* `.angular-cli.json`: contém configurações do projeto Angular (nome, scripts etc.)
-* `package.json`:  contém configurações do projeto NodeJS (um projeto Angular utiliza NodeJS para gerenciamento de pacotes e bibliotecas, por exemplo)
+* `e2e`: contém especificações de testes **end-to-end**
+* `node_modules`: contém os pacotes (dependências)
+* `src`: contém o código-fonte (módulos, componentes etc.)
+* `angular.json`: contém configurações do projeto Angular (nome, scripts etc.)
+* `package.json`:  contém as especificações dos pacotes utilizados no projeto
 * `tsconfig.json` e `tslint.json`:  contêm configurações do processo de tradução de código TypeScript para JavaScript
 
-No diretório `src`:
+No diretório `src` também há uma estrutura importante:
+
+\dirtree{%
+ .1 src.
+ .2 app.
+ .2 assets.
+ .2 environments.
+ .2 browserlist.
+ .2 favicon.ico.
+ .2 index.html.
+ .2 karma.conf.js.
+ .2 main.ts.
+ .2 polyfills.ts.
+ .2 styles.css.
+ .2 test.ts.
+ .2 tsconfig.app.json.
+ .2 tsconfig.spec.json.
+ .2 tslint.json.
+}
 
 * `app`: contém o **root module** e os demais **feature modules** do projeto
 * `assets`: contém arquivos CSS, JSON e scripts, por exemplo
@@ -103,12 +123,12 @@ No diretório `src`:
 * `main.ts`: contém o código TypeScript necessário para iniciar o software (processo chamado de **Bootstrap**)
 * `polyfills.ts`: contém código TypeScript que indica scripts adicionais a serem carregados pelo Browser para funcionamento do software como um todo e para questões de compatibilidade com versões antigas de Browsers
 * `style.css`: contém o código CSS para definir estilos globais para o software
-* `tsconfig.app.json` e `typings.d.ts`: complementam configurações do arquivo `../tsconfig.json` específicas para o software em questão
+* `tsconfig.app.json`: complementa configurações do arquivo `tsconfig.json` específicas para o software em questão
 
-No diretório `app`:
+No diretório `app` há os arquivos:
 
-* `app.component.css`, `app.component.html` e `app.component.ts`: definem o component AppComponent, respectivamente: apresentação por meio de CSS, Template e Controller. Basicamente, estes três arquivos formam a base de todo componente
-* `app.module.ts`: código TypeScript que define o **root module**
+* `app.component.css`, `app.component.html` e `app.component.ts`: definem o component `AppComponent`, respectivamente: apresentação por meio de CSS, **Template** e **Controller**. Basicamente, estes três arquivos formam a base de todo componente
+* `app.module.ts`: define o **root module** (`AppModule`)
 
 Esse capítulo apresentou conceitos importantes do Angular. Sempre que necessário, volte a esse capítulo para revisar conceitos do Angular. Muito provavelmente, mesmo desenvolvedores experientes precisem, de tempos em tempos, rever essas definições da arquitetura do Angular.
 

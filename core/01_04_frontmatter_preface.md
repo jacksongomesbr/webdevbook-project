@@ -72,7 +72,13 @@ O **Git** é um gerenciador de repositórios com recursos de versionamento de c�
 
 O **Heroku** é um serviço de **PaaS** (de *Platform-as-a-Service*). PaaS é um modelo de negócio fornece um ambiente de execução conforme uma plataforma de programação, como o Python, um tecnologia de banco de dados, como MySQL e PostgreSQL e ainda outros recursos, como cache usando Redis.
 
-> **Calma!** Não pira! (In)Felizmente você não vai usar todas as tecnologias lendo o conteúdo desse livro. Fica para outra oportunidade.
+---
+
+**Calma! Não pira!**
+
+(*In*)Felizmente você não vai usar todas as tecnologias lendo o conteúdo desse livro. Fica para outra oportunidade.
+
+---
 
 Para utilizar o Heroku você precisa criar uma conta de usuário. Acesse [https://www.heroku.com/](https://www.heroku.com/) e crie uma conta de usuário.
 
