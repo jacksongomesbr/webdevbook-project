@@ -236,9 +236,36 @@ Os campos do formulário continuam utilizando elementos do HTML (`input` e `text
 
 A sintaxe de two-way data binding é utilizada para vincular um campo de formulário a uma expressão (geralmente um atributo declarado no Controller). Isso acontece no `input` por meio de `[(ngModel)]="titulo"`, vinculando o seu valor ao atributo `titulo`, e no `textarea`, por meio de `[(ngModel)]="conteudo"`, vinculando seu valor ao atributo `conteudo`. Isso significa que qualquer alteração em um dos campos gera uma alteração no atributo vinculado, e vice-versa.
 
+
+## Depuração de código no browser
+
+Os browsers fornecem feramentas para depuração de código HTML, CSS e JavaScript por meio das "Ferramentas do desenvolvedor"^[O Chrome chama de "Ferramentas do desenvolvedor", enquanto o Firefox chama de "Web Developer" e o Edge chama de "Ferramentas de desenvolvedor". Os nomes são semelhantes e as funcionalidades são parecidas. Reserve um tempo para aprender a lidar com cada browser da sua escolha.] A [@fig:browser-sources-debug] ilustra uma tela do browser executando o **angular-noticas** e com as ferramentas do desenvolvedor ativas.
+
+![Janela do browser com ferramentas de desenvolvedor habilitadas](./graphics/browser-sources-debug.png){#fig:browser-sources-debug}
+
+A [@fig:browser-sources-debug] ilustra que as ferramentas do desenvolvedor são organizadas em abas, sendo a aba "Sources" a de maior interesse para a depuração de código. Do lado esquerdo da conteúdo da aba "Sources" há um navegador de arquivos, sendo o nó "webpack://" o mais importante. Dentro dele estão os arquivos utilizados no servidor web local de desenvolvimento. Para depurar o `AppComponent`, por exemplo, deve-se navegar até o nó "app.component.ts" (a hierarquia completa seria "webpack://./src/app/app.component.ts"). Perceba a relação com o sistema de arquivos local.
+
+Mais ao centro a [@fig:browser-sources-debug] mostra o código-fonte do componente. Podem ser adicionados e removidos os pontos-de-parada (*breakpoints*) que servem para controlar as paradas de execução passo-a-passo do código. A figura ilustra um breakpoint na linha 13, o que significa que a execução do código será interrompida (pausada) quando método `salvar()` for executado. 
+
+Na parte superior, mais à direita, há uma barra de ferramentas com botões, nesta ordem:
+
+* pausar/continuar a execução do código
+* executar a próxima linha e não entrar no código da função/método
+* executar a próxima linha e entrar no código da função/método
+* executar a próxima linha e sair do código da função/método
+* desativar os breakpoints
+* pausar em exceções
+
+Por fim, o lado direito apresenta painéis que permitem inspecionar valores de variáveis e expressões em tempo real.
+
+Essas ferramentas permitem um acompanhamento mais próximo da execução do código sem a necessidade de utilizar, por exemplo, o Console do browser.
+
+## Conclusão
+
 Este capítulo apresentou o software **noticias-angular** e sua estrutura. Os destaques são:
 
 * importar o módulo `FormsModule` no **root module**
 * uso das diretivas estruturais `NgForOf` e `NgIf`
 * uso de data-binding (interpolação, evento, propriedade e vinculação de campo do formulário com atributo do Controller)
+* utilizar o browser como ferramenta de depuração de código
 
