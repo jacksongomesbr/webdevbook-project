@@ -84,7 +84,6 @@ class AppComponent <<Component>> {
     leituraNoticia: Noticia
     editarNoticia: Noticia
     listaPesquisa: string
-    ngOnInit()
     salvar()
     mostrar(noticia: Noticia)
     fechar()
@@ -102,6 +101,11 @@ AppModule --> angular.forms.FormsModule: imports
 AppModule -> AppComponent: declarations
 AppModule -> AppComponent: bootstrap
 AppComponent -> Noticia: usa
+AppComponent -.-> angular.core.OnInit: implementa
+
+class angular.core.OnInit <<Interface>> {
+    ngOnInit()    
+}
 
 @enduml
 ```
@@ -163,7 +167,26 @@ O código do método `estahPublicada()` considera que:
 
 ## AppComponent
 
-O Controller do `AppComponent` possui um número mais extenso de atributos e métodos para implementar as funcionalidades necessárias, que são apresentadas detalhadamente a seguir. 
+O Controller do `AppComponent` possui atributos e métodos para implementar as funcionalidades necessárias, que são apresentadas detalhadamente a seguir. 
+
+### Interface `OnInit`
+
+O pacote `@angular/core` fornece a interface `OnInit`, que disponibiliza o método `ngOnInit()`. Esse método funciona como um evento que é executado quando o componente (que implementa a interface) é criado pelo Angular. Assim, o Controller fornece uma implementação para o método `ngOnInit()`:
+
+```typescript
+ngOnInit() {
+    this.noticias.push(new Noticia(
+        this.noticias.length,
+        'Teste',
+        'Conteúdo da notícia',
+        'João Silva',
+        'joaosilva@gmail.com',
+        new Date()
+    ));
+}
+```
+
+O código do método `ngOnInit()` não é muito prático, está apenas para demonstração de como adicionar um elemento em `noticias` na instanciação do `AppComponent` e ter alguns dados iniciais. De qualquer forma, o `ngOnInit()` é o local correto para execução de código inicial do Componente.
 
 ### Exibir telas diferentes
 
