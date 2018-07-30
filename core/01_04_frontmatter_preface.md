@@ -1,4 +1,4 @@
-# Prefácio
+# Prefácio {-}
 
 Este é um livro open-source, tanto no conteúdo quanto no código-fonte associado. O conteúdo é resultado de algumas práticas com o **Framework Angular** e segue uma abordagem prática, com foco no entendimento de conceitos e tecnologias no contexto do desenvolvimento de um software web.
 
@@ -6,14 +6,14 @@ Um *framework* representa um modelo, uma forma de resolver um problema. Em termo
 
 O objetivo deste livro é fornecer uma ferramenta para o desenvolvimento de habilidades de desenvolvimento web com Angular, com a expectativa de que você comece aprendendo o básico (o "hello world") e conclua com habilidades necessárias para o desenvolvimento de software que consome dados e interage com uma API HTTP REST, por exemplo.
 
-## Fonte de referência e versão do Angular
+## Fonte de referência e versão do Angular {-}
 
 Parte do conteúdo do livro é baseada na documentação oficial do Angular, disponível em [https://angular.io](https://angular.io).
 
 Como o Angular é um projeto em constante desenvolvimento \(pelo menos até agora\) serão publicadas atualizações no conteúdo do livro sempre que possível, para refletir novos recursos e funcionalidades. No momento, o conteúdo do livro é baseado na versão **6.0.0**.
 
 
-## Convenções
+## Convenções  {-}
 
 Os trechos de código apresentados no livro seguem o seguinte padrão:
 
@@ -49,7 +49,7 @@ class Pessoa:
         return ModelManager.save(self)
 ```
 
-## Conhecimentos desejáveis
+## Conhecimentos desejáveis  {-}
 
 Este livro aborda o desenvolvimento de software front-end para a web do ponto-de-vista do Angular. Isso quer dizer que não trata de conceitos iniciais de HTML, CSS, JavaScript, TypeScript e Bootstrap. Entretanto, os conceitos fundamentais dessas tecnologias vão sendo apresentados no decorrer dos capítulos, conforme surge a necessidade deles.
 
@@ -80,7 +80,7 @@ O **Heroku** é um serviço de **PaaS** (de *Platform-as-a-Service*). PaaS é um
 
 ---
 
-Para utilizar o Heroku você precisa criar uma conta de usuário. Acesse [https://www.heroku.com/](https://www.heroku.com/) e crie uma conta de usuário.
+Para utilizar o Heroku você precisa criar uma conta de usuário. Acesse <https://www.heroku.com/> e crie uma conta de usuário.
 
-Depois que tiver criado e validado sua conta de usuário instale o **Heroku CLI**, uma ferramenta de linha de comando (prompt) que fornece uma interface de texto para criar e gerenciar aplicativos Heroku. Detalhes da instalação dessa ferramenta não são tratados aqui, mas comece acessando [https://devcenter.heroku.com/articles/heroku-cli](https://devcenter.heroku.com/articles/heroku-cli).
+Depois que tiver criado e validado sua conta de usuário instale o **Heroku CLI**, uma ferramenta de linha de comando (prompt) que fornece uma interface de texto para criar e gerenciar aplicativos Heroku. Detalhes da instalação dessa ferramenta não são tratados aqui, mas comece acessando <https://devcenter.heroku.com/articles/heroku-cli>.
 

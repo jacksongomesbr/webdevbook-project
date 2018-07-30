@@ -138,4 +138,36 @@
   url     = {https://www.typescriptlang.org/index.html},
 }
 
+@Misc{compodochome,
+  author  = {Vincent Ogloblinsky},
+  title   = {Compodoc -- The missing documentation tool for your Angular application},
+  year    = {2018},
+  urldate = {2018-07-29},
+  url     = {https://compodoc.app/},
+}
+
+@Misc{amstel2004arquitetura,
+  author  = {Frederick van Amstel},
+  title   = {Arquitetura da Informação e de Interação},
+  year    = {2004},
+  urldate = {2018-07-29},
+  url     = {http://www.usabilidoido.com.br/arquitetura_da_informacao_e_de_interacao.html},
+}
+
+@Misc{corais-sitegrama,
+  author  = {Corais.org},
+  title   = {Sitegrama},
+  urldate = {2018-07-29},
+  url     = {http://www.corais.org/node/184},
+}
+
+@Misc{lieberman2004uml,
+  author  = {Benjamim Lieberman},
+  title   = {UML Activity Diagrams: Detailing User Interface Navigation},
+  month   = apr,
+  year    = {2004},
+  urldate = {2018-07-29},
+  url     = {https://www.ibm.com/developerworks/rational/library/4697.html},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

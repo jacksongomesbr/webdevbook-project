@@ -1,10 +1,22 @@
-# Gerenciador de notícias com Angular
+# Gerenciador de notícias com Angular {#sec:noticias-angular}
 
-[@sec:introducao] apresentou conceitos básicos de desenvolvimento web e o software **noticias-js**, um projeto de gerenciador de notícias que é implementado utilizando tecnologias front-end (HTML, CSS e JavaScript). Este capítulo apresenta o **noticias-angular**, basicamente uma outra versão do **noticias-js**, mas que é implementado utilizando **Angular**.
+O **Capítulo [-@sec:introducao]** apresentou conceitos básicos de desenvolvimento web e o software **noticias-js**, um projeto de gerenciador de notícias que é implementado utilizando tecnologias front-end (HTML, CSS e JavaScript). Este capítulo apresenta o **noticias-angular**, basicamente uma outra versão do **noticias-js**, mas que é implementado utilizando **Angular**, com o objetivo de apresentar os recursos desta plataforma de desenvolvimento. 
+
+Este capítulo apresenta:
+
+* estrutura de um componente (Controller e Template)
+* estrutura completa de um projeto integrando módulo e componente
+* linguagem de template, variável de template e data biding
+* diretivas estruturais: `NgIf` e `NgForOf`
+* diretivas de atributos para lidar com propriedades (data binding)
+* diretivas de atributos para lidar com eventos (data binding)
+* diretivas de atributos para lidar com formulários (two-way data binding)
+
+Os próximos capítulos apresentarão outras versões deste software ou outros softwares, quando necessário, para que seja possível conhecer os recursos do Angular.
 
 ## Clonar e executar localmente
 
-Este capítulo está diretamente relacionado com o software **noticias-angular**, cujo repositório é [https://github.com/jacksongomesbr/webdevbook-noticias-angular](https://github.com/jacksongomesbr/webdevbook-noticias-angular). Antes de prosseguir, clone e execute o projeto localmente. A interface do software é idêntica à do **noticias-js**. Verifique.
+Este capítulo está diretamente relacionado com o software **noticias-angular**, branch "inicio"^[O repositório do branch "iniciando" está disponível em <https://github.com/jacksongomesbr/webdevbook-noticias-angular/tree/inicio> e você pode vê-lo em execução acessando <https://stackblitz.com/github/jacksongomesbr/webdevbook-noticias-angular/tree/inicio>]. Antes de prosseguir, clone e execute o projeto localmente. A interface do software é idêntica à do **noticias-js**. Verifique.
 
 ## O projeto
 
@@ -224,7 +236,7 @@ Os campos do formulário continuam utilizando elementos do HTML (`input` e `text
 
 A sintaxe de two-way data binding é utilizada para vincular um campo de formulário a uma expressão (geralmente um atributo declarado no Controller). Isso acontece no `input` por meio de `[(ngModel)]="titulo"`, vinculando o seu valor ao atributo `titulo`, e no `textarea`, por meio de `[(ngModel)]="conteudo"`, vinculando seu valor ao atributo `conteudo`. Isso significa que qualquer alteração em um dos campos gera uma alteração no atributo vinculado, e vice-versa.
 
-Este capítluo apresentou o software **noticias-angular** e sua estrutura. Os destaques são:
+Este capítulo apresentou o software **noticias-angular** e sua estrutura. Os destaques são:
 
 * importar o módulo `FormsModule` no **root module**
 * uso das diretivas estruturais `NgForOf` e `NgIf`
